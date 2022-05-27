@@ -1,8 +1,8 @@
-package implementation;
+package implementations.first;
 
 import java.time.LocalDate;
 
-// Abstract builder.
+// Abstract builder. Notice that all the methods return a Builder object.
 public interface UserDTOBuilder
 {
     // Methods to build "parts" of product at a time.

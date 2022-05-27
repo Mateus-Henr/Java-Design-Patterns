@@ -1,4 +1,4 @@
-package implementation;
+package implementations.first;
 
 //Interface implemented by "products"
 public interface UserDTO

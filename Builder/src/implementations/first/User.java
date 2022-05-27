@@ -1,8 +1,8 @@
-package implementation;
+package implementations.first;
 
 import java.time.LocalDate;
 
-//Class used to construct the product
+// Class used to construct the product.
 public class User
 {
     private String firstName;

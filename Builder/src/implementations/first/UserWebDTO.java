@@ -1,6 +1,4 @@
-package implementation;
-
-import implementation.UserDTO;
+package implementations.first;
 
 // A product in builder pattern.
 public class UserWebDTO implements UserDTO
