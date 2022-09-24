@@ -19,6 +19,15 @@
     • Product - This can be an interface or an abstract class.
     • SimpleFactory - Provides a static method to get instance of product subclass. Typically, a separated class.
                       This is the class that the client would access.
+
+
+    Examples
+    • NumberFormat.
+
+
+    Summary
+    • Encapsulates object instantiation in a separate method.
+    • Decide on which object to create based on a parameter.
  */
 
 public class Introduction
