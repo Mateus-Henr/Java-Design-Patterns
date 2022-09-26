@@ -7,5 +7,12 @@ package implementation;
  */
 public enum RegistryEnum
 {
+    INSTANCE;
 
+    public void getConfiguration()
+    {
+
+    }
 }
+// Some problems that come up when using an enum as a Singleton is that you cannot extend an enum and
+// you cannot create any objects using the enum.

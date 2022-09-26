@@ -9,5 +9,29 @@ package implementation;
  */
 public class LazyRegistryWithDCL
 {
+    private LazyRegistryWithDCL()
+    {
+
+    }
+
+    // Indicates that the threads should not use the cached version of this variable, instead it uses main memory.
+    private static volatile LazyRegistryWithDCL INSTANCE;
+
+    public static LazyRegistryWithDCL getInstance()
+    {
+        if (INSTANCE == null)
+        {
+            // We have to do the double-checking because one thread might be waiting outside this block.
+            synchronized (LazyRegistryWithDCL.class)
+            {
+                if (INSTANCE == null)
+                {
+                    INSTANCE = new LazyRegistryWithDCL();
+                }
+            }
+        }
+
+        return INSTANCE;
+    }
 
 }
