@@ -15,7 +15,7 @@ public class Client
     {
         Message msg = creator.getMessage();
 
-        System.out.println(msg);
+        System.out.println(msg.getContent());
     }
 
 }

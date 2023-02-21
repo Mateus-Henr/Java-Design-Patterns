@@ -4,7 +4,7 @@ import javafx.geometry.Point2D;
 
 public class Client
 {
-    public static final ObjectPool<Bitmap> bitmapPool = new ObjectPool<>(() -> new Bitmap("logo.bmp"), 5);
+    public static final ObjectPool<Bitmap> bitmapPool = new ObjectPool<>(() -> new Bitmap("logo.bmp"), 1);
 
     public static void main(String[] args)
     {

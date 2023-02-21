@@ -4,7 +4,7 @@ import implementation.Instance;
 import implementation.ResourceFactory;
 import implementation.Storage;
 
-// Factory implementation for Google cloud platform resources.
+// Factory implementation for AWS cloud platform resources.
 public class AwsResourceFactory implements ResourceFactory
 {
     @Override
