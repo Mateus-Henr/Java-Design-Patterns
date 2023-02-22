@@ -36,7 +36,7 @@
 
 
 ## Comparison Abstract Factory vs Factory Method
-- AF - Hides factories and concrete objects from the Client code.
+- AF - Hides factories and concrete objects from the main.java.Client code.
 - FM - Hides the concrete objects from the client code.
 - AF - Multiple objects working together of a single family.
 - FM - One product and its subclasses.

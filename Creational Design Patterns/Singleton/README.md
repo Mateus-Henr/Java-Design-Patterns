@@ -25,10 +25,10 @@
       inheritance/subclassing must not be allowed.
   - Keeping track of the instance by placing it into a class.
   - When working with a singleton we have to make sure to give access to the instance through an public static
-      method. Notice that it can also be final depending on your implementation.
+      method. Notice that it can also be final depending on your src.
 
 
-## Types of implementation
+## Types of src
   - Early initialization (eager Singleton) - Create singleton as soon as the class is loaded.
   - Lazy initialization (Lazy Singleton) - Singleton is created when it is first required.
 

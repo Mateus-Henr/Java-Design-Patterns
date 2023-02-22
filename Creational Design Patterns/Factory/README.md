@@ -24,7 +24,7 @@
 
 ## Implementation Considerations
 
-- The Creator can be a concrete class if provided a default implementation.
+- The Creator can be a concrete class if provided a default src.
 - The factory method could take arguments to decide upon which object to create.
 
 
