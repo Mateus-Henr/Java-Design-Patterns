@@ -18,7 +18,6 @@
   - The rest is similar to Class Adapter.
 
 ## Implementation Steps
-
   - Firstly we create a class for Adapter, and it must implement the interface expected by client.
   - When using a Class Adapter, we extend from our existing class, and we forward the method to another
       method inherited from adaptee.
@@ -27,3 +26,41 @@
   - An object adapter should take adapter as an argument in constructor or a less preferred or a less
       preferred solution, you can instantiate it in the constructor this tightly coupling with a specific
       adaptee.
+
+
+## Implementation Considerations
+- The adapter depends directly on the implemented interface and the object being adapter.
+- You should avoid overriding methods from the adaptee in order to not modify the adaptee's original behaviour.
+- The adapter can be used to implement a more specific adapter for one of its subclasses.
+
+
+## Design Considerations
+- In Java, if both target and adaptee are concrete classes, class adapter might not be possible to implement.
+- Using the class adapter allows us to use the adapter object where either the target interface is expected as well as
+where the adaptee object is expected. It shouldn't be done.
+- In other words, class adapter shouldn't be use.
+
+### Examples
+- InputStreamReader.
+
+
+## Comparison with Decoder
+### Adapter
+    - Adapts an object to another interface without changing the behaviour.
+    - Recursive composition (adapter adapting another adapter) is difficult to implement.
+
+### Decorator
+    - Enhances object behaviour without changing its interface.
+    - Possible to use recursive composition.
+
+
+## Pitfalls
+- Class adapter shouldn't be used.
+- Adapter shouldn't edit the original object's behaviour. Simple interface translation is everything that you should do.
+
+
+## Summary
+- Used when an existing object with required functionality but the client code is expecting a different interface than
+our object.
+- Class adapter shouldn't be used.
+- 

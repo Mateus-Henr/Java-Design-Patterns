@@ -3,7 +3,7 @@
  */
 public class EmployeeObjectAdapter implements Customer
 {
-    private Employee adaptee;
+    private final Employee adaptee;
 
     public EmployeeObjectAdapter(Employee adaptee)
     {
